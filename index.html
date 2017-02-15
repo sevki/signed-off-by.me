@@ -1,0 +1,74 @@
+
+
+<html>
+	<head>
+		<title>signed-off-by.me</title>
+		<meta name=viewport content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+
+<h1>Signed-off-by?me</h1>
+<code>tl;dr get me to <a href="#fix">fix</a></code>
+<p>
+Welcome to signed-off-by.me, you are probably here because you forgot to sign-off atleast one commit.
+</p>
+<h2>What does that mean?</h2>
+
+By sigining-off your commits you make the <a href="#dco">following</a> declaration. <br/>
+Simply put, by signing off your commits you are telling the maintainers that to the best of your knowledge
+the patch you, or a third party, has created is able to be distributed under a compatible <a href="https://choosealicense.com/licenses/">open-source license</a> amd it does not infringe on copyrighted material.
+<h2 id="fix">Fix</h2>
+If it's your last one, you are in luck, just do
+<pre>
+git commit --amend -s --no-edit
+</pre>
+and do a force push.
+If you have more then one commit thats not signed-off<br/>
+<pre>
+git filter-branch --msg-filter "cat - && echo && echo 'Signed-off-by: Your Name <Your.Name@example.com>'" HEAD
+</pre>
+and do a force push. 
+
+<h4 id="dco">Developer Certificate of Origin:</h4>
+<pre>
+Developer Certificate of Origin
+Version 1.1
+
+Copyright (C) 2004, 2006 The Linux Foundation and its contributors.
+1 Letterman Drive
+Suite D4700
+San Francisco, CA, 94129
+
+Everyone is permitted to copy and distribute verbatim copies of this
+license document, but changing it is not allowed.
+
+
+Developer's Certificate of Origin 1.1
+
+By making a contribution to this project, I certify that:
+
+(a) The contribution was created in whole or in part by me and I
+    have the right to submit it under the open source license
+    indicated in the file; or
+
+(b) The contribution is based upon previous work that, to the best
+    of my knowledge, is covered under an appropriate open source
+    license and I have the right under that license to submit that
+    work with modifications, whether created in whole or in part
+    by me, under the same open source license (unless I am
+    permitted to submit under a different license), as indicated
+    in the file; or
+
+(c) The contribution was provided directly to me by some other
+    person who certified (a), (b) or (c) and I have not modified
+    it.
+
+(d) I understand and agree that this project and the contribution
+    are public and that a record of the contribution (including all
+    personal information I submit with it, including my sign-off) is
+    maintained indefinitely and may be redistributed consistent with
+    this project or the open source license(s) involved.
+</pre>
+
+	</body>
+</html>
