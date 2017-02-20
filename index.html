@@ -1,37 +1,45 @@
-
-
 <html>
-	<head>
-		<title>signed-off-by.me</title>
-		<meta name=viewport content="width=device-width, initial-scale=1">
-	</head>
-	<body>
-<a href="https://github.com/sevki/signed-off-by.me"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
-<h1>Signed-off-by?me</h1>
-		<small><a href="https://github.com/sevki/signed-off-by.me/edit/master/index.html">Edit this page</a></small><br/>
-<code>tl;dr get me to <a href="#fix">fix</a></code>
-<p>
-Welcome to signed-off-by.me, you are probably here because you forgot to sign-off atleast one commit.
-</p>
-<h2>What does that mean?</h2>
 
-By sigining-off your commits you make the <a href="#dco">following</a> declaration. <br/>
-Simply put, by signing off your commits you are telling the maintainers that to the best of your knowledge
-the patch you, or a third party, has created is able to be distributed under a compatible <a href="https://choosealicense.com/licenses/">open-source license</a> amd it does not infringe on copyrighted material.
-<h2 id="fix">Fix</h2>
-If it's your last one, you are in luck, just do
-<pre>
+<head>
+	<title>signed-off-by.me</title>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<a href="https://github.com/sevki/signed-off-by.me">
+		<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
+						alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+	</a>
+	<h1>Signed-off-by?me</h1>
+	<code>tl;dr get me to
+					<a href="#fix">fix</a>
+				</code>
+	<p>
+		Welcome to signed-off-by.me, you are probably here because you forgot to sign-off atleast one commit.
+	</p>
+	<h2>What does that mean?</h2> By sigining-off your commits you make the
+	<a href="#dco">following</a> declaration.
+	<br/> Simply put, by signing off your commits you are telling the maintainers that to the best of your knowledge the patch you, or a third party, has created is able to be distributed under a compatible
+	<a href="https://choosealicense.com/licenses/">open-source license</a> amd it does not infringe on copyrighted material.
+
+	<h2 id="fix">Fix</h2> If it's your last one, you are in luck, just do
+
+	<pre>
 git commit --amend -s --no-edit
-</pre>
-and do a force push.
-If you have more then one commit thats not signed-off<br/>
-<pre>
-git filter-branch --msg-filter "cat - && echo && echo 'Signed-off-by: Your Name <Your.Name@example.com>'" HEAD
-</pre>
-and do a force push.
+</pre> and do a force push. If you have more then one commit thats not signed-off
+	<br/>
+	<pre>
+git filter-branch --msg-filter "cat - &amp;&amp; echo &amp;&amp; echo 'Signed-off-by: Your Name
+						&lt;Your.Name@example.com	&gt;'" HEAD
 
-<h4 id="dco">Developer Certificate of Origin:</h4>
-<pre>
+	</pre> and do a force push.
+
+	<small>
+			<a href="https://github.com/sevki/signed-off-by.me/edit/master/index.html">Edit this page</a>
+	</small>
+	<br/>
+	<h4 id="dco">Developer Certificate of Origin:</h4>
+	<pre>
 Developer Certificate of Origin
 Version 1.1
 
@@ -69,7 +77,7 @@ By making a contribution to this project, I certify that:
     personal information I submit with it, including my sign-off) is
     maintained indefinitely and may be redistributed consistent with
     this project or the open source license(s) involved.
-</pre>
+	</pre>
+</body>
 
-	</body>
 </html>
