@@ -29,8 +29,7 @@ git commit --amend -s --no-edit
 </pre> and do a force push. If you have more then one commit thats not signed-off
 	<br/>
 	<pre>
-git filter-branch --msg-filter "cat - &amp;&amp; echo &amp;&amp; echo 'Signed-off-by: Your Name
-						&lt;Your.Name@example.com	&gt;'" HEAD
+git filter-branch --msg-filter "cat - &amp;&amp; echo &amp;&amp; echo 'Signed-off-by: Your Name &lt;Your.Name@example.com&gt;'" HEAD
 
 	</pre> and do a force push.
 
