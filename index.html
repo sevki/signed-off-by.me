@@ -18,16 +18,16 @@
 	<p>
 		Welcome to signed-off-by.me, you are probably here because you forgot to sign-off atleast one commit.
 	</p>
-	<h2>What does that mean?</h2> By sigining-off your commits you make the
+	<h2>What does that mean?</h2> By signing-off your commits you make the
 	<a href="#dco">following</a> declaration.
 	<br/> Simply put, by signing off your commits you are telling the maintainers that to the best of your knowledge the patch you, or a third party, has created is able to be distributed under a compatible
-	<a href="https://choosealicense.com/licenses/">open-source license</a> amd it does not infringe on copyrighted material.
+	<a href="https://choosealicense.com/licenses/">open-source license</a> and it does not infringe on copyrighted material.
 
 	<h2 id="fix">Fix</h2> If it's your last one, you are in luck, just do
 
 	<pre>
 git commit --amend -s --no-edit
-</pre> and do a force push. If you have more then one commit thats not signed-off
+</pre> and do a force push. If you have more than one commit that's not signed-off
 	<br/>
 	<pre>
 git filter-branch --msg-filter "cat - &amp;&amp; echo &amp;&amp; echo 'Signed-off-by: Your Name &lt;Your.Name@example.com&gt;'" HEAD
